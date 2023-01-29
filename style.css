@@ -1,0 +1,50 @@
+/* Import the Roboto Mono font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/* Apply box-sizing: border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set the background color to a dark green, text color to white, and font to Roboto Mono */
+body {
+  background-color: #5D8AA8;
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+  /* Center the contents of the body vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Set the height of the body to the full height of the viewport and hide any overflow */
+  height: 100vh;
+  overflow: hidden;
+  /* Remove default margins */
+  margin: 0;
+}
+
+/* Style the counter container element */
+.counter-container {
+  /* Use flexbox to align the contents of the container vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* Add some margin to the container */
+  margin: 30px 50px;
+}
+
+/* Style the counter element */
+.counter {
+  /* Increase the font size */
+  font-size: 60px;
+  /* Add some margin to the top of the counter */
+  margin-top: 10px;
+}
+
+/* Use a media query to change the layout when the viewport width is less than 580px */
+@media (max-width: 580px) {
+  body {
+    /* Change the flex direction of the body to column */
+    flex-direction: column;
+  }
+}
